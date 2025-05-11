@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="stylesheet" href="../css/estiloreportes.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="listardatos.html">Listar reportes</a></li>
+        </ul>
+    </nav>
+    <h2>Formulario de Reporte</h2>
+    <form id="formulario-Reporte" action="/guardar_reporte" method="post">
+        <div>
+            <label for="reporte">Descripción del reporte</label>
+            <input type="txt" id="reporte" name="reporte" required>
+        </div>
+        <div>
+            <label for="donde">¿Dónde ocurrió?</label>
+            <input type="txt" id="donde" name="donde" required>
+        </div>
+        <div>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Seleccione el tipo de reporte</option>
+                <option value="Data">Proyector encendido en sala</option> 
+                <option value="Agua">Cañería en mal estado</option>
+                <option value="Fumadores">Personas fumando en zona libre de humo</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar reporte">
+    </form>
+</body>
+</html>
